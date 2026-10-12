@@ -1,12 +1,110 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquivo 001</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #0b0d0c;
+            color: #e5e7e5;
+            font-family: 'DM Mono', monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        main {
+            width: 100%;
+            max-width: 650px;
+            border: 1px solid #272d29;
+            background: #101411;
+            padding: 48px;
+            box-shadow: 0 20px 80px #0008;
+        }
+
+        .label {
+            color: #7da58a;
+            font-size: 11px;
+            letter-spacing: 3px;
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(32px, 7vw, 52px);
+            font-weight: 500;
+            line-height: 1.2;
+            margin: 0 0 20px;
+        }
+
+        p {
+            color: #a0aaa2;
+            font-size: 13px;
+            line-height: 2;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #29332c;
+            margin: 36px 0 24px;
+        }
+
+        .status {
+            color: #7da58a;
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #7da58a;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 500px) {
+            main {
+                padding: 28px;
+            }
+
+            .label {
+                margin-bottom: 36px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Você encontrou algo...</h1>
-    <p>Nem tudo é o que parece ser.</p>
+    <main>
+        <div class="label">ARQUIVO 001 // ACESSO RESTRITO</div>
+
+        <h1>Você encontrou algo...</h1>
+
+        <p>
+            Nem tudo é o que parece ser.<br>
+            Algumas respostas só aparecem para quem procura.
+        </p>
+
+        <hr>
+
+        <div class="status">
+            <span class="dot"></span>SISTEMA ATIVO
+        </div>
+    </main>
 </body>
 </html>
